@@ -36,7 +36,7 @@ export interface TikTokVideoInfo {
 }
 
 export class TikTokService {
-  private static readonly API_KEY = 'c5633c8f9emshb2a83665f7da638p149c65jsn7b0e6463649d';
+  private static readonly API_KEY = 'f7a2217d48mshfcd4e8215a63928p1fbda2jsn865e78d880f6';
 
   private static readonly VALID_DOMAINS = [
     'tiktok.com',
@@ -686,7 +686,7 @@ export class TikTokService {
       else quality = 'video';
     }
     
-    return `tikdownload_${randomName}_${quality}.${extension}`;
+    return `TikDownload.app_${randomName}_${quality}.${extension}`;
   }
 
   // Enhanced download method with EXACT size matching
