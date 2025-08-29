@@ -1,4 +1,4 @@
-import { Link, Download, Play, Music, VideoIcon } from 'lucide-react';
+import { Link, Download, Play, Music, VideoIcon, Image } from 'lucide-react';
 import { Card } from './ui/card';
 
 export default function HowItWorks() {
@@ -6,17 +6,17 @@ export default function HowItWorks() {
     {
       icon: Link,
       title: "Paste Link",
-      description: "Copy and paste your TikTok video URL into the input field above"
+      description: "Copy and paste your TikTok video or photo carousel URL into the input field above"
     },
     {
       icon: Play,
       title: "Process",
-      description: "Our system fetches real video data and prepares multiple download formats"
+      description: "Our system analyzes the content and prepares multiple download formats for videos, photos, and audio"
     },
     {
       icon: Download,
       title: "Download",
-      description: "Choose no watermark video, MP3 audio, or HD quality - then download instantly"
+      description: "Choose from no watermark videos, individual photos, MP3 audio, or HD quality - then download instantly"
     }
   ];
 
@@ -24,20 +24,20 @@ export default function HowItWorks() {
     {
       icon: VideoIcon,
       title: "No Watermark Videos",
-      description: "Download TikTok videos without the TikTok watermark in HD quality",
+      description: "Download TikTok videos without the TikTok watermark in crystal-clear HD quality",
       color: "from-green-500 to-emerald-500"
+    },
+    {
+      icon: Image,
+      title: "Photo Carousel Downloads",
+      description: "Save TikTok photo carousels - download individual images or entire collections in HD",
+      color: "from-pink-500 to-rose-500"
     },
     {
       icon: Music,
       title: "MP3 Audio Extraction",
-      description: "Extract high-quality audio tracks from TikTok videos in MP3 format",
+      description: "Extract high-quality audio tracks from any TikTok video or photo carousel background music",
       color: "from-blue-500 to-cyan-500"
-    },
-    {
-      icon: Download,
-      title: "Multiple Formats",
-      description: "Choose from various quality options including HD video and audio-only downloads",
-      color: "from-purple-500 to-pink-500"
     }
   ];
 
@@ -49,7 +49,7 @@ export default function HowItWorks() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-medium text-foreground mb-4">How It Works</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Download TikTok videos without watermarks or extract MP3 audio in just three simple steps. Fast, free, and easy to use.
+              Download TikTok videos, photo carousels, or extract MP3 audio in just three simple steps. Support for all TikTok content types - fast, free, and easy to use.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export default function HowItWorks() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-medium text-foreground mb-4">Why Choose Our Downloader?</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Get the best TikTok downloading experience with advanced features that other tools don't offer.
+              Get the most comprehensive TikTok downloading experience with support for videos, photos, and audio - features that other tools don't offer.
             </p>
           </div>
 

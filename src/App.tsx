@@ -6,6 +6,7 @@ import ResultsPage from './components/ResultsPage';
 import ErrorPage from './components/ErrorPage';
 import FAQPage from './components/FAQPage';
 import ProgressIndicator from './components/ProgressIndicator';
+import FaviconManager from './components/FaviconManager';
 import { ThemeProvider } from './components/ThemeProvider';
 import { TooltipProvider } from './components/ui/tooltip';
 import { Toaster } from './components/ui/sonner';
@@ -256,6 +257,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <TooltipProvider>
+        <FaviconManager />
         <div className="min-h-screen bg-background flex flex-col">
           <Header currentPage={currentPage} onNavigate={handleNavigate} />
           <main className="flex-1 flex flex-col">
